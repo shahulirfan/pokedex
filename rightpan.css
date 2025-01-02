@@ -1,0 +1,350 @@
+:root {
+
+    --bg-red: #bd0f34;
+    --bg-red-pan: #ce1131;
+    --bg-red-bord: #951828;
+}
+
+
+
+
+/* right  screen  monitor part */
+
+.pokedex_right_pan {
+
+    height: 560px;
+    width: 400px;
+
+    position: relative;
+    top: 30px;
+    left: 7px;
+    display: flex;
+    flex-direction: column;
+
+    z-index: -2;
+
+}
+
+.rit_pan_item>div {
+    border-radius: 10px;
+}
+
+
+.rit_pan_item {
+    position: relative;
+    float: left;
+
+    bottom: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    height: 485px;
+    width: 350px;
+    background-color: var(--bg-red);
+
+
+    box-shadow: #951828 15px 0 0;
+}
+
+.pokedex_rit_mon {
+    width: 280px;
+    height: 150px;
+    background-color: #032d29;
+
+}
+
+/* number pad on middle part */
+
+.pan_num {
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+
+
+    box-shadow: #2165ec -2px 2px 0 2px;
+
+    width: 278px;
+    height: 70px;
+    background-color: #31a7f1;
+}
+
+.pan_num>div {
+    border: #2165ec solid 2px;
+}
+
+.pan_num_it1 {
+    border-top-left-radius: 10px;
+}
+
+.pan_num_it4 {
+    border-top-right-radius: 10px;
+}
+
+.pan_num_it5 {
+    border-bottom-left-radius: 10px;
+}
+
+.pan_num_it8 {
+    border-bottom-right-radius: 10px;
+}
+
+
+/* right screen bottom left part (2* big_button,,left_attrtibute_panal) */
+
+.rit_pan_butt {
+    width: 278px;
+    height: 30%;
+
+}
+
+
+.rit_pan_butt>div {
+    height: 100%;
+    width: 45%;
+
+}
+
+.rit_pan_butt {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.rit_pan_butt>div>div {
+    border-radius: 8px;
+}
+
+.left_pan_butt {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.pan_butt_g {
+    width: 90%;
+    height: 45%;
+    background-color: #dedede;
+
+    box-shadow: #6a6a72 -2px 2px 0 2px;
+
+}
+
+.attr_lef {
+    width: 100%;
+    background-color: #032d29;
+    height: 50px;
+}
+
+
+/* right pannal bottom right part (2* minibuton,,bulb,,right_attrtibute_panal) */
+
+.pan_rit_butt {
+    display: grid;
+
+    grid-template-rows: 20% auto 50px;
+    grid-template-columns: auto;
+
+    row-gap: 10px;
+
+}
+
+
+.pan_rit_butt>div {
+    width: 100%;
+}
+
+
+.pan_rit_butt_g {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 6px;
+
+}
+
+.pan_rit_butt_g>div {
+    height: 50%;
+    width: 45%;
+    background-color: #262626;
+    border-radius: 20px;
+    box-shadow: #0d0d0d -2px 2px 0 2px;
+}
+
+.attr_rit {
+
+    background-color: #032d29;
+    height: 50px;
+}
+
+
+
+.pan_bul {
+    width: 30px;
+    height: 30px;
+    background-color: #c6bb46;
+    margin-right: 10%;
+    border-radius: 100%;
+
+    box-shadow: #8b8635 4px 4px 0 5px;
+}
+
+.pan_bulb_g {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* top are of the right panal */
+
+
+.r_top {
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+
+
+
+
+.r_mid_bg {
+    transform: rotate(30deg);
+
+    z-index: 0;
+
+    box-shadow: var(--bg-red-bord) 11px -9px 0 9px;
+
+    position: relative;
+
+    top: 36%;
+    right: 34px;
+
+
+    background-color: var(--bg-red);
+    width: 180px;
+    height: 80px;
+
+}
+
+
+.r_lef_bg {
+    width: 200px;
+    height: 60px;
+    background-color: var(--bg-red);
+
+    box-shadow: var(--bg-red-bord) 3px -12px 0 3px;
+
+
+
+
+
+}
+
+.r_rit_bg {
+
+
+
+    width: 250px;
+    height: 30px;
+    background-color: var(--bg-red);
+
+    position: relative;
+
+    top: 10px;
+    right: 50px;
+
+    box-shadow: #951828 8px -8px 0 7px;
+
+    border-top-right-radius: 15px;
+
+
+
+}
+
+
+
+/* out line of the right screen */
+
+.poke_r_bg_border {
+    position: absolute;
+
+    z-index: -1;
+}
+
+
+.r_bg_top{
+    width: 75%;
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+
+
+
+
+}
+
+
+.bg_t_l {
+    width: 176px;
+    height: 60px;
+    background-color: var(--bg-red-pan);
+    
+
+
+
+}
+
+.bg_t_r {
+
+    width: 280px;
+    height: 30px;
+    background-color: var(--bg-red-pan);
+
+    position: relative;
+
+    right: 80px;
+    top: 20px;
+
+    border-top-right-radius: 20px;
+
+}
+
+.bg_t_m {
+    background-color: var(--bg-red-pan);
+    width: 160px;
+    height: 80px;
+
+
+    transform: rotate(30deg);
+
+    z-index: 0;
+
+    position: relative;
+
+    top: 59%;
+    right: 30px;
+
+}
+
+.bg_o {
+    position: relative;
+    top: 7px;
+    height: 485px;
+    width: 382px;
+    background-color: var(--bg-red-pan);
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 2px;
+}
